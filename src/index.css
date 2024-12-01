@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&display=swap');
+
+nav {
+  display: grid;
+  grid-template: "main right" 10vh;
+  justify-items: stretch;
+}
+header {
+  display: grid;
+  grid-template: "main right" 30vh;
+  justify-items: center;
+  background: rgb(73,94,87) ;
+}
+
+.markazi-heading {
+  font-family: 'Markazi Text', serif;
+  font-size: 2.5rem; /* Adjust as needed */
+  font-weight: 700; /* Bold text */
+  color: rgb(51,51,51); /* Text color */
+}
+.markazi-text {
+  font-family: 'Markazi Text', serif;
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: 100; /* Bold text */
+  color: rgb(51,51,51); /* Text color */
+}
+
+.karla-text{
+  font-family: 'Karla';
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: 100; /* Bold text */
+  color: rgb(51,51,51); /* Text color */
+
+}
+main {
+  display: grid;
+  grid-template: "main right" 50vh;
+  justify-items: center;
+}
+footer {
+  display: grid;
+  grid-template: "main right" 10vh;
+  justify-items: center;
+}
+
+.nav-link {
+  font-family: Karla;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

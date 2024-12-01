@@ -5,11 +5,11 @@ import { HStack, Image, Link } from "@chakra-ui/react";
 export default function Nav() {
     return (
         <nav>
-            <HStack justify="space-between" padding="1rem" backgroundColor="black">
+            <HStack justify="space-between" padding="3rem" backgroundColor="black">
                 <Image
                     src={logo}
                     alt="Company Logo"
-                    boxSize="200px"
+                    boxSize="100px"
                     objectFit="contain"
                 />
                 {/* Use HStack for inline links */}
