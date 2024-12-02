@@ -1,14 +1,15 @@
-import React from 'react'
-import Card from './Card'
-import {Box, HStack, Heading, Button} from "@chakra-ui/react"
+import React from 'react';
+import Card from './Card';
+import { Box, HStack, Heading, Button } from "@chakra-ui/react";
 import { Link } from 'react-router-dom';
+
 const dishes = [
     {
         title: "Greek salad",
         description:
             "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
         getImageSrc: () => require("../assets/images/greek salad.jpg"),
-        price:12.99
+        price: 12.99
     },
     {
         title: "Bruschetta",
@@ -24,42 +25,45 @@ const dishes = [
         getImageSrc: () => require("../assets/images/lemon dessert.jpg"),
         price: 5.00
     },
-
 ];
 
 export default function Highlights() {
     return (
         <section id="specials">
-            <HStack spacing="100px" align="center">
+            <HStack
+                spacing={{ base: 4, md: 8 }}  // Adjust spacing based on screen size
+                align="center"
+                direction={{ base: "column", md: "row" }}  // Stack items vertically on mobile
+                justify="space-between"
+                marginBottom={{ base: "2rem", md: "3rem" }}
+            >
                 <Heading
                     className="markazi-heading"
-                    fontSize="4xl"
-                    color= "rgb(73, 94, 87)"
-                    margin = "2rem"
-                    padding = "2.5rem"
+                    fontSize={{ base: "3xl", sm: "4xl" }}  // Responsive font size
+                    color="rgb(73, 94, 87)"
+                    margin="2rem"
+                    textAlign="center"  // Center text on smaller screens
                 >
-                    This Week specials
-
+                    This Week's Specials
                 </Heading>
+
                 <Button
                     as={Link}
                     to="/order"
                     className="lt-button"
-                    marginLeft="10rem"
-
-
+                    marginLeft={{ base: 0, md: "5rem" }}  // No margin on mobile, larger on desktop
+                    width={{ base: "full", md: "auto" }}  // Button full width on small screens
                 >
                     Online Menu
                 </Button>
-
             </HStack>
 
-            <HStack>
-                <Box
-                    display="grid"
-                    gridTemplateColumns="repeat(3,minmax(0,1fr))"
-                    gridGap={4}
-                >
+            <Box
+                display="grid"
+                gridTemplateColumns={{ base: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }}  // Grid layout for different screen sizes
+                gridGap={4}
+                marginTop={{ base: "2rem", md: "3rem" }}  // Adjust margins for different screens
+            >
                 {dishes.map((dish) => (
                     <Card
                         key={dish.title}
@@ -69,9 +73,7 @@ export default function Highlights() {
                         price={dish.price}
                     />
                 ))}
-                </Box>
-            </HStack>
-
+            </Box>
         </section>
-    )
+    );
 }

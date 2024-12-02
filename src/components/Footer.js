@@ -96,11 +96,12 @@ export default function Footer() {
                 {/* Social Links Section */}
                 <VStack spacing={4}>
                     {socials.map((item, index) => (
-                        <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
+                        <a key={index}  href={item.url} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon
                                 color="rgb(73, 94, 87)"
                                 icon={item.icon}
                                 size="2x"
+                                className="social-media"
                             />
                         </a>
                     ))}

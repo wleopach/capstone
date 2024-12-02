@@ -56,6 +56,16 @@ footer {
 
 .nav-link {
   font-family: Karla;
+  transition: color 0.3s ease; /* Smooth transition effect */
+
+}
+.nav-link:hover {
+  color: rgb(244,206,20); /* Change to a different color on hover */
+}
+
+
+.social-media:hover {
+  color: rgb(244,206,20); /* Change to a different color on hover */
 }
 
 .lt-button {

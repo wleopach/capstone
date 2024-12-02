@@ -1,5 +1,6 @@
-import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Heading, HStack, Image, Text, VStack, Link } from "@chakra-ui/react";
 import React from "react";
+import { Link as RouterLink } from 'react-router-dom'; // Importing react-router Link for navigation
 
 const Card = ({ title, description, imageSrc, price }) => {
   return (
@@ -22,7 +23,9 @@ const Card = ({ title, description, imageSrc, price }) => {
 
       <Text className="karla-text">{description}</Text>
       <HStack>
-        <Text className="karla-text">Order a delivery</Text>
+        <Link as={RouterLink} to="/order" color="rgb(238,153,114)" _hover={{ textDecoration: "underline" }}>
+          Order a delivery
+        </Link>
       </HStack>
     </VStack>
   );

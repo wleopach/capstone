@@ -1,5 +1,5 @@
-import React from 'react'
-import {Box, Heading} from '@chakra-ui/react'
+import React from 'react';
+import { Box, Heading } from '@chakra-ui/react';
 import TestCard from "./TestCard";
 
 const testimonials = [
@@ -34,16 +34,19 @@ export default function Testimonials() {
         <>
             <Heading
                 className="markazi-heading"
-                color= "rgb(73, 94, 87)"
-                margin = "2rem"
-                padding = "1.5rem"
+                color="rgb(73, 94, 87)"
+                margin="2rem"
+                padding="1.5rem"
+                textAlign="center" // Center heading on all screen sizes
             >
                 Testimonials
             </Heading>
             <Box
                 display="grid"
-                gridTemplateColumns="repeat(4,minmax(0,1fr))"
+                gridTemplateColumns={{ base: "1fr", sm: "repeat(4, minmax(0, 1fr))" }} // 1 column on mobile, 4 columns on larger screens
                 gridGap={4}
+                justifyItems={{ base: "end", sm: "start" }} // Push items to the right on small screens
+                marginTop="2rem"  // Add some space on top
             >
                 {testimonials.map((testimonial, index) => (
                     <TestCard
@@ -56,5 +59,5 @@ export default function Testimonials() {
                 ))}
             </Box>
         </>
-    )
+    );
 }

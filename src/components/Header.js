@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, VStack, Image, Heading, Text, Box, Button } from "@chakra-ui/react";
+import { VStack, Image, Heading, Text, Box, Button } from "@chakra-ui/react";
 import res_food from "../assets/images/restauranfood.jpg";
 import { Link } from 'react-router-dom';
 
@@ -10,8 +10,7 @@ export default function Header() {
             id="header"
             bg="rgb(73, 94, 87)"
             p={8}
-            display="flex"
-            flexDirection={{ base: "column", md: "row" }} // Stack on smaller screens
+            gridTemplateColumns={{ xs: "1fr", sm: "repeat(2, minmax(0, 1fr))" }}
             alignItems="center"
             justifyContent="space-between"
             gap={6} // Space between sections
