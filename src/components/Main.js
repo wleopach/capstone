@@ -4,6 +4,7 @@ import Testimonials from "./Testimonials";
 import Highlights from "./Highlights";
 import {VStack} from "@chakra-ui/react"
 export default function Main() {
+
     return (
         <main id="main">
             <VStack spacing={2}>
@@ -11,8 +12,6 @@ export default function Main() {
                 <Testimonials/>
                 <About id="about"/>
             </VStack>
-
-
         </main>
     )
 }

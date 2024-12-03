@@ -52,7 +52,7 @@ export default function Highlights() {
                     to="/order"
                     className="lt-button"
                     marginLeft={{ base: 0, md: "5rem" }}  // No margin on mobile, larger on desktop
-                    width={{ base: "full", md: "auto" }}  // Button full width on small screens
+                    width={{ base: "auto", md: "auto" }}  // Button full width on small screens
                 >
                     Online Menu
                 </Button>

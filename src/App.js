@@ -4,6 +4,7 @@ import Reservations from './pages/Reservations';
 import Menu from './pages/Menu';
 import Order from './pages/Order';
 import Login from './pages/Login';
+import ConfirmedBooking from './pages/ConfirmedBooking';
 import {Provider} from "./components/ui/provider"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/menu" element={<Menu />} />
                     <Route path="/order" element={<Order />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/confirmed" element={< ConfirmedBooking />} />
                     {/* <Route path="/about" element={<About />} /> */}
                 </Routes>
 
