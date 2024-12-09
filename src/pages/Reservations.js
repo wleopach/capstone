@@ -50,34 +50,6 @@ export default function Reservations() {
     const [apiFunctions, setApiFunctions] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://raw.githubusercontent.com/courseraap/capstone/main/api.js');
-                const apiScript = await response.text();
-
-                // Create a temporary script element
-                const script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.text = apiScript;
-
-                // Append the script to the document's head
-                document.head.appendChild(script);
-
-                // After the script loads, extract the functions
-                const extractedFunctions = window.apiFunctions; // Assuming the functions are exported as 'apiFunctions'
-                setApiFunctions(extractedFunctions);
-
-                // Clean up: Remove the temporary script element
-                document.head.removeChild(script);
-            } catch (error) {
-                console.error('Error fetching or executing API script:', error);
-            }
-        };
-
-        fetchData();
-
-    }, []);
-    useEffect(() => {
         if (formValues.date) {
             const date = new Date(formValues.date);
             fetch(`https://raw.githubusercontent.com/courseraap/capstone/main/api.js`)
