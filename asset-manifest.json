@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/capstone/static/css/main.c18b905c.css",
+    "main.js": "/capstone/static/js/main.2c7cc6aa.js",
+    "static/js/453.7b154009.chunk.js": "/capstone/static/js/453.7b154009.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/capstone/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/greek salad.jpg": "/capstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/capstone/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/bruscheta.jpg": "/capstone/static/media/bruscheta.d54e450bda5efcf06010.jpg",
+    "static/media/logo_footer.png": "/capstone/static/media/logo_footer.215df87837073a73cb27.png",
+    "static/media/logo.png": "/capstone/static/media/logo.d4cae6fac8384c2dae04.png",
+    "index.html": "/capstone/index.html",
+    "static/media/🦆 icon _hamburger menu.svg": "/capstone/static/media/🦆 icon _hamburger menu.0da6f67ced800ab909f63d5144de37ee.svg",
+    "main.c18b905c.css.map": "/capstone/static/css/main.c18b905c.css.map",
+    "main.2c7cc6aa.js.map": "/capstone/static/js/main.2c7cc6aa.js.map",
+    "453.7b154009.chunk.js.map": "/capstone/static/js/453.7b154009.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c18b905c.css",
+    "static/js/main.2c7cc6aa.js"
+  ]
+}
